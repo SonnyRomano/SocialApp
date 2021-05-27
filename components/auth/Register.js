@@ -34,7 +34,7 @@ export class Register extends Component {
 
     render() {
         return (
-            <View>
+            <View style={{ margin: 15, marginTop: 10 }}>
                 <TextInput
                     placeholder='name'
                     onChangeText={(name) => this.setState({ name })}
@@ -44,6 +44,7 @@ export class Register extends Component {
                     onChangeText={(email) => this.setState({ email })}
                 />
                 <TextInput
+                    style={{ marginBottom: 10 }}
                     placeholder='password'
                     secureTextEntry={true}
                     onChangeText={(password) => this.setState({ password })}
